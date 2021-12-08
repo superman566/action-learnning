@@ -102,3 +102,10 @@ dist
 
 # TernJS port file
 .tern-port
+
+/tools/*.jar
+### system ignore ###
+.DS_Store
+Thumbs.db
+.metadata
+package-lock.json
