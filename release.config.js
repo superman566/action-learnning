@@ -1,5 +1,5 @@
 module.exports = {
-  branches: "main",
+  branches: ["main"],
   repositoryUrl: "https://github.com/superman566/action-learnning",
   plugins: [
     "@semantic-release/commit-analyzer",
