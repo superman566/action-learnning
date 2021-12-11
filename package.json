@@ -1,5 +1,6 @@
 {
   "name": "action-learnning",
+  "repository": "git@github.com:superman566/action-learnning.git",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
