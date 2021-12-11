@@ -11,7 +11,7 @@ jobs:
       - name: checkout changes
         uses: actions/checkout@v2
       - name: Cache node_modules
-        uses: actions/cache@v2
+        uses: actions/cache@v1
         with:
           path: ~/.npm
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
