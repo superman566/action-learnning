@@ -46,6 +46,9 @@ jobs:
         with:
           name: build
           path: build
+      - uses: actions/download-artifact@v2
+        with:
+          name: my-artifact
       - name: Deploy to Staging
         if: github.event_name == 'push'
         run: npx surge --project ./build --domain action-learning.surge.sh
