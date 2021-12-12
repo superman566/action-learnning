@@ -2,8 +2,8 @@ name: CI
 on:
   release:
     types: [published]
-  jobs:
-    slack-message:
+jobs:
+  slack-message:
     runs-on: ubuntu-latest
     steps:
       - name: slack message
