@@ -1,4 +1,4 @@
-name: CI
+name: Realse
 on:
   release:
     types: [published]
@@ -8,4 +8,4 @@ jobs:
     steps:
       - name: slack message
         run: |
-          curl -X POST -H 'Content-type: application/json' --data '{"text":"New release ${{github.event.release.tag_name}} is out, <${{github.event.release.html_url}}| checkout>"}' ${{ SLACK_WEBHOOK_NEW }}
+          curl -X POST -H 'Content-type: application/json' --data '{"text":"New release ${{github.event.release.tag_name}} is out, <${{github.event.release.html_url}}| checkout>"}' ${{ secrets.SLACK_WEBHOOK_NEW }}
